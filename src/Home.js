@@ -1,8 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
 const Home = () => {
+  useEffect(() => {
+    authServices();
+  }, []);
+
+  async function authServices() {
+    //let response = await fetch("https://trs2500.ml/Controller.php", {
+    let response = await fetch("http://localhost/aln/Controller.php", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: "leantrs@gmail.com",
+        password: "224566",
+        pass: "login",
+      }),
+    });
+
+    let json = await response.json();
+
+    console.log(json);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
