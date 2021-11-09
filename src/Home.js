@@ -8,8 +8,8 @@ const Home = () => {
   }, []);
 
   async function authServices() {
-    //let response = await fetch("https://trs2500.ml/Controller.php", {
-    let response = await fetch("http://localhost/aln/Controller.php", {
+    let response = await fetch("https://trs2500.ml/aln/Controller.php", {
+   // let response = await fetch("http://localhost/aln/Controller.php", {
       method: "POST",
       headers: {
         Accept: "application/json",
