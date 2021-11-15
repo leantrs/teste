@@ -1,4 +1,4 @@
 [build]
-base = "."
+base = "main"
 command = "npm run build"
 publish = "./build/"
