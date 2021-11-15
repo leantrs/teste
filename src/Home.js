@@ -4,7 +4,7 @@ import "./App.css";
 
 const Home = () => {
   useEffect(() => {
-    authServices();
+    // authServices();
   }, []);
 
   async function authServices() {
