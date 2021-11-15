@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 const Home = () => {
+  /*
   useEffect(() => {
     // authServices();
   }, []);
@@ -26,7 +27,7 @@ const Home = () => {
 
     console.log(json);
   }
-
+*/
   return (
     <div className="App">
       <header className="App-header">
